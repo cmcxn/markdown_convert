@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Markdown Converter</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Markdown to HTML/PDF Converter</h1>
+    <form action="/convert" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".md" required>
+        <select name="output_format">
+            <option value="html">HTML</option>
+            <option value="pdf">PDF</option>
+        </select>
+        <button type="submit">Convert</button>
+    </form>
+</body>
+</html>
